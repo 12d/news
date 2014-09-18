@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?1"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?2"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?3"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?4"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?5"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?6"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?7"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?8"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?9"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?10"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?11"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?12"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?13"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?14"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?15"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?16"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?17"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?18"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?19"/>
+<img src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?111"/>
+<script src="1.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function(){
+        console.log(2);
+
+    });
+    window.onload = function(){
+        console.log(3);
+        var i=0;
+        while(i<20){
+            var img = new Image();
+            /*
+             img.onload = function(){
+             console.log(4);
+             }
+             */
+            img.src="http://www.lyxsgl.com/Content/images/20120203135625798.jpg?66"+i;
+
+            document.body.appendChild(img);
+            i++;
+        }
+    }
+</script>
+</body>
+</html>
