@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .wrap{width: 100%; background: #ccc; display: -webkit-box; pointer-events: auto;}
+        .item-1{display: -webkit-box; background: red; height: 100px; -webkit-box-flex:1.0; }
+        .item-2{display: -webkit-box; background: blue; height: 100px;-webkit-box-flex:1.0; }
+        .item-3{display: -webkit-box; background: green; height: 100px;-webkit-box-flex:2.0; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+</div>
+<div class="wrap">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+</div>
+<div class="wrap">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+</div>
+<div class="wrap">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+</div>
+<div class="wrap">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+</div>
+<script>
+    document.elementFromPoint(100, 100).style.color = "#cd0000";
+    var wrap = document.querySelector('.wrap');
+    wrap.addEventListener('touchstart', function(){
+        alert(1);
+    })
+    document.body.addEventListener('touchend', function(e){
+        console.log(e);
+        console.log(e.clientX);
+        e= e.changedTouches[0];
+        console.log(document.elementFromPoint(e.clientX, e.clientY));
+    });
+</script>
+</body>
+</html>
