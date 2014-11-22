@@ -1710,5 +1710,6 @@ asyncCall.reg("runindex", function () {
         Page.full.enter()
     })
 });
-
+var yyy = '2';
+var ccc= '3';
 /*FEND*/
