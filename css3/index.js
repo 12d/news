@@ -1,3 +1,4 @@
+var xxx = 1;
 var nextFrame = function () {
     return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (a, k) {
             return setTimeout(a, k || 1)
