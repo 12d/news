@@ -1709,5 +1709,5 @@ asyncCall.reg("runindex", function () {
         Page.full.enter()
     })
 });
-
+var yyy = '2';
 /*FEND*/
