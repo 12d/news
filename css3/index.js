@@ -1712,5 +1712,9 @@ asyncCall.reg("runindex", function () {
 });
 var yyy = '2';
 var ccc= '3';
+<<<<<<< HEAD
 var ddd='2'
+=======
+var uuu='3';
+>>>>>>> test
 /*FEND*/
